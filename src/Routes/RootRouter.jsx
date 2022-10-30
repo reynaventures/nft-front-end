@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ROUTES } from '../constans/routes';
 import MainLayout from '../Layouts/MainLayout/MainLayout';
-import Home from '../Scenes/Home/Home';
-import Shop from '../Scenes/Shop/Shop';
+import Home from '../Scenes/Home';
+import Shop from '../Scenes/Shop';
 
 function RootRoute() {
     return (

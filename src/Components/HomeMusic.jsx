@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
 import { BsFillPlayFill } from 'react-icons/bs';
 import homeMen from '../assets/img/homeMan.png';
 import styled from 'styled-components';
+import { AiOutlinePause } from 'react-icons/ai';
 
 const StyledHomeMusic = styled.div `
     .home__music {
@@ -11,6 +12,7 @@ const StyledHomeMusic = styled.div `
     height: 3.5rem;
     padding: 5px 23px 0px 0;
     background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s all;
 }
 .home__music-wrap {
     position: relative;
@@ -18,6 +20,7 @@ const StyledHomeMusic = styled.div `
     height: 100%;
     display: flex;
     align-items: flex-end;
+    transition: 0.3s all;
 }
 .home__music-plus {
     position: absolute;
@@ -43,11 +46,12 @@ const StyledHomeMusic = styled.div `
     width: 65px;
     height: 65px;
     object-fit: cover;
+    transition: 0.3s all;
 }
 .home__music-img {
     margin-right: 10px;
     position: relative;
-    top: 6px;
+    top: 0px;
     left: 0px;
 }
 .home__music-hidden-name {
@@ -99,6 +103,7 @@ const StyledHomeMusic = styled.div `
 .home__music--full-img {
     width: 80px;
     height: 80px;
+    top: 6px;
 }
 
 
@@ -110,35 +115,40 @@ const StyledHomeMusic = styled.div `
 `
 
 function HomeMusic() {
+
+    const [fullMusicBlock, setFullMusicBlock] = useState(false);
+    const [musicPlay, setMusicPlay] = useState(false);
+
   return (
     <StyledHomeMusic>
         <div className='music'>
-{/*         <div className="home__music">
-            <div className="home__music-wrap">
-                <div className="home__music-plus">+</div>
-                <img src={homeMen} alt="" className='home__music-img' />
-                <p className="home__music-hidden-name">- - -</p>
-            </div>
-        </div> */}
-
-
-        <div className="home__music home__music--full">
-            <div className="home__music-wrap home__music--full-wrap">
-                <div className="home__music-plus home__music--full-plus">-</div>
-                <img src={homeMen} alt="" className='home__music-img home__music--full-img' />
-                <p className="home__music-hidden-name home__music--full-hidden-name">- - -</p>
-                <div className="home__music--full-song">
-                    <h4 className='home__music--full-songer'>Songer,Abz</h4>
-                    <p className="home__music--full-songname">song name</p>
+            {!fullMusicBlock ?
+                    <div className="home__music">
+                    <div className="home__music-wrap">
+                        <div className="home__music-plus" onClick={() => setFullMusicBlock(true)}>+</div>
+                        <img src={homeMen} alt="" className='home__music-img' />
+                        <p className="home__music-hidden-name">- - -</p>
+                    </div>
                 </div>
-                <div className="home__music--full-controls">
-                    <div className="home__music--full-prev"><BiSkipPrevious/></div>
-                    <div className="home__music--full-stop-start"><BsFillPlayFill/></div>
-                    <div className="home__music--full-next"><BiSkipNext/></div>
+                :
+                <div className="home__music home__music--full">
+                <div className="home__music-wrap home__music--full-wrap">
+                    <div className="home__music-plus home__music--full-plus" onClick={() => setFullMusicBlock(false)}>-</div>
+                    <img src={homeMen} alt="" className='home__music-img home__music--full-img' />
+                    <p className="home__music-hidden-name home__music--full-hidden-name">- - -</p>
+                    <div className="home__music--full-song">
+                        <h4 className='home__music--full-songer'>Songer,Abz</h4>
+                        <p className="home__music--full-songname">song name</p>
+                    </div>
+                    <div className="home__music--full-controls">
+                        <div className="home__music--full-prev"><BiSkipPrevious/></div>
+                        <div className="home__music--full-stop-start" onClick={() => setMusicPlay(!musicPlay)}>{musicPlay ? <AiOutlinePause/> : <BsFillPlayFill/>}</div>
+                        <div className="home__music--full-next"><BiSkipNext/></div>
+                    </div>
                 </div>
             </div>
+            }
         </div>
-    </div>
     </StyledHomeMusic>
     
   )

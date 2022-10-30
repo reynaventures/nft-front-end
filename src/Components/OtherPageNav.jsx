@@ -11,7 +11,7 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { PATH } from '../constans/routes';
 
-const StyledHomeNav = styled.div `
+const StyledOtherPageNav = styled.div `
 width: 100%;
   .home__header {
     display: flex;
@@ -41,8 +41,8 @@ width: 100%;
     margin-left: 8px;
 }
 .header__item {
-    background-color: rgba(255,255,255, 0.2);
-    color: rgba(255,255,255,1);
+    background-color: #e2e2e4;
+    color: #000;
     letter-spacing: .05em;
     display: flex;
     justify-content: center;
@@ -56,19 +56,21 @@ width: 100%;
     cursor: pointer;
     transition: 0.2s ease-out;
     &:hover {
-        background-color: rgba(255,255,255, 0.4);
+        background-color: #bebebee5;
     }
 }
 .header__item--active {
-    background-color: rgba(255,255,255, 0.9);
-    & a {
-        border: 1px solid #fff;
-    }
+    background-color: #bebebee5;
+    color: #000;
+    margin: 0 8px;
+    text-decoration: underline;
+
 }
 .header__item a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 }
 .header__item-more, .header__item-buy, .header__item-language {
     position: relative;
@@ -129,7 +131,7 @@ width: 100%;
 .header__connect-btn {
     background-color: transparent;
     font-size: .7rem;
-    color: #fff;
+    color: #000;
 }
 .header__nav-icon {
 	font-size: 17px;
@@ -147,7 +149,7 @@ width: 100%;
 }
 `
 
-function HomeNav() {
+function OtherPageNav() {
 
     const navigate = useNavigate();
     const [handleMore, setHandleMore] = useState(false);
@@ -156,7 +158,7 @@ function HomeNav() {
     const location = window.location.pathname;
 
   return (
-    <StyledHomeNav>
+    <StyledOtherPageNav>
       <header className='home__header'>
       <div className="header__logo" onClick={() => navigate(PATH.homePage)}>
         <img src={AzukiLogoWhite} alt="" />
@@ -169,7 +171,7 @@ function HomeNav() {
             </li>
             <li className="header__item">Gallery</li>
             <li className="header__item">World</li>
-            <li className={location === PATH.shopPage ? "header__item--active" : "header__item"} onClick={() => navigate(PATH.shopPage)}>Shop</li>
+            <li className={location === PATH.shopPage ? "header__item header__item--active" : "header__item"} onClick={() => navigate(PATH.shopPage)}>Shop</li>
             <li className="header__item">MindMap</li>
             <li className="header__item header__item-more" onClick={() => {
                 setHandleMore(!handleMore);
@@ -225,9 +227,8 @@ function HomeNav() {
         </ul>
       </nav>
     </header>
-    </StyledHomeNav>
-    
+    </StyledOtherPageNav>
   )
 }
 
-export default HomeNav
+export default OtherPageNav

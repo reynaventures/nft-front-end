@@ -1,10 +1,10 @@
 import React from 'react'
-import butterfly from '../../assets/videos/butterfly.mp4';;
-import HomeMusic from '../../Components/HomeMusic';
-import HomeProof from '../../Components/HomeProof';
-import HomeNav from '../../Components/HomeNav';
+import butterfly from '../assets/videos/butterfly.mp4';;
+import HomeMusic from '../Components/HomeMusic';
+import HomeProof from '../Components/HomeProof';
+import HomeNav from '../Components/HomeNav';
 import styled from 'styled-components';
-import mobileBg from '../../assets/img/mobileBg.jpg';
+import mobileBg from '../assets/img/mobileBg.jpg';
 
 const StyledHome = styled.div `
 width: 100%;
@@ -39,7 +39,6 @@ function Home() {
                 </div>
             </div>
         </StyledHome>
-        
     )
 }
 
