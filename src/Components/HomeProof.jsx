@@ -1,10 +1,16 @@
-.home__proof {
+import React from 'react'
+import { FaArrowRight } from 'react-icons/fa';
+import dragonGold from '../assets/img/dragonGold.jpg';
+import styled from 'styled-components';
+
+const StyledHomeProof = styled.div `
+width: 43%;
+  .home__proof {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000;
     padding: 5px 10px;
-    width: 43%;
     border-radius: 5px;
 }
 .home__proof-left {
@@ -75,9 +81,7 @@
 
 
 @media only screen and (max-width: 1040px) {
-    .home__proof {
-        width: 100%;
-    }
+    width: 100%;
     .home__proof-title {
         font-size: 9px;
     }
@@ -90,3 +94,23 @@
         padding-right: 7px;
     }
 }
+`
+
+function HomeProof() {
+  return (
+    <StyledHomeProof>
+      <div className="home__proof">
+      <div className="home__proof-left">
+          <img src={dragonGold} className='home__proof-img' alt="" />
+          <div className="home__proof-titles">
+              <h5 className="home__proof-title">proof of skate</h5>
+              <h3 className="home__proof-subtitle">AUCTION COMPLETE</h3>
+          </div>
+      </div>
+      <button type='button' className='btn home__proof-view'>view <FaArrowRight className='home__icon-arrow'/></button>
+    </div>
+    </StyledHomeProof>
+  )
+}
+
+export default HomeProof

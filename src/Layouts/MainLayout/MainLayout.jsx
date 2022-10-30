@@ -1,5 +1,4 @@
 import React from "react";
-import './mainLayout.scss';
 import { Outlet } from "react-router-dom";
 
 function MainLayout() {

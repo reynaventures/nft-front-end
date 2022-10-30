@@ -106,3 +106,14 @@ h6,
 	cursor: pointer;
 	font-family: 'mainFont', sans-serif;
 }
+
+.body {
+    position: relative;
+    padding: 30px 35px 20px 35px;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
