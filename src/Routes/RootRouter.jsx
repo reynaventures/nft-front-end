@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ROUTES } from '../constans/routes';
 import MainLayout from '../Layouts/MainLayout/MainLayout';
-import Home from '../Scenes/Home';
+import Home from '../Scenes/Home/Home';
 
 function RootRoute() {
     return (
