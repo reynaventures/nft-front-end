@@ -1,10 +1,10 @@
 import React from 'react'
 import butterfly from '../../assets/videos/butterfly.mp4';;
 import HomeMusic from '../../Components/HomeMusic/HomeMusic';
-import './home.scss';
 import HomeProof from '../../Components/HomeProof/HomeProof';
 import HomeNav from '../../Components/HomeNav/HomeNav';
 import mobileBg from '../../assets/img/mobileBg.jpg';
+import './home.scss';
 
 function Home() {
     return (
