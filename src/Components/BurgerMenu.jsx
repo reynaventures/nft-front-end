@@ -43,6 +43,13 @@ const StyledBurgerMenu = styled.div `
   @media only screen and (max-width: 1040px) {
     .burger {
         display: block;
+        color: ${(props) => props.theme.fontColor};
+    }
+    .burger__line {
+      color: ${(props) => props.theme.fontColor};
+      &::before, &::after {
+        background-color: ${(props) => props.theme.fontColor};
+      }
     }
 }
 `

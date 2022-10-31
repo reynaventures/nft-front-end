@@ -11,8 +11,9 @@ const StyledHomeMusic = styled.div `
     border-radius: 7px;
     height: 3.5rem;
     padding: 5px 23px 0px 0;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: ${(props) => props.theme.backgroundColor};
     transition: 0.3s all;
+    box-shadow: 0 0 30px #00000026;
 }
 .home__music-wrap {
     position: relative;
@@ -28,7 +29,7 @@ const StyledHomeMusic = styled.div `
     right: -35px;
     border-radius: 50%;
     width: 2.5rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: ${(props) => props.theme.backgroundColor};
     border: 2px solid rgba(255,255,255, 0.1);
     font-size: 25px;
     height: 2.5rem;
@@ -94,7 +95,7 @@ const StyledHomeMusic = styled.div `
 .home__music--full-prev, .home__music--full-stop-start, .home__music--full-next {
     margin-right: 15px;
     font-size: 35px;
-    color: #fff;
+    color: ${(props) => props.theme.fontColor};
     cursor: pointer;
     &:hover {
         transform: scale(1.1);

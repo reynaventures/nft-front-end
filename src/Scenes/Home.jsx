@@ -22,6 +22,9 @@ width: 100%;
         height: 100%;
         object-fit: cover;
     }
+    .body {
+        padding: 30px 35px 20px 35px;
+    }
 `
 
 function Home() {
