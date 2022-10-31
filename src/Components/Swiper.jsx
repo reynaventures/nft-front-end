@@ -17,8 +17,7 @@ import 'swiper/scss/scrollbar';
 
 const StyledSwiperSlider = styled.div `
     .swiper {
-        width: 800px;
-        height: 800px;
+        width: 46vw;
     }
     .swiper__item {
         width: 100%;
@@ -40,6 +39,12 @@ const StyledSwiperSlider = styled.div `
         width: 50%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    @media only screen and (max-width: 1040px) {
+        .swiper {
+            width: 624px;
+            margin-bottom: 30px;
+    }
     }
 `
 

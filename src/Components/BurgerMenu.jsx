@@ -19,7 +19,7 @@ const StyledBurgerMenu = styled.div `
   .burger__line {
     position: absolute;
     top: 25%;
-    left: 0;
+    right: 30px;
     width: 30px;
     height: 2.5px;
     border-radius: 20px;

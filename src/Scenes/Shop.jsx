@@ -4,22 +4,29 @@ import HomeNav from '../Components/HomeNav';
 import SwiperSlider from '../Components/Swiper';
 import shopItemMini from '../assets/img/shopItemMini.png';
 import HomeMusic from '../Components/HomeMusic';
+import { PATH } from '../constans/routes';
+import { useNavigate } from 'react-router-dom';
+import About from '../Components/About';
 
 const StyledShop = styled.div `
-    .body {
       color: #000;
       display: block;
       font-family: 'proofFont', sans-serif;
-    }
-    .main {
-      margin-top: 50px;
-    }
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(231,231,233, 1);
+
     .item {
       background-color: rgba(231,231,233, 1);
       padding: 30px 35px 20px 35px;
+      min-height: 100%;
+      min-width: 100%;
+      margin-top: 50px;
     }
     .acive__page-item {
       font-size: 0.75rem;
+      margin-bottom: 20px;
       span:last-child {
         cursor: pointer;
         transition: 0.1s all;
@@ -33,6 +40,7 @@ const StyledShop = styled.div `
       text-decoration: underline;
       margin-right: 10px;
       color: #616161;
+      cursor: pointer;
     }
     .shop__item {
       display: grid;
@@ -101,31 +109,81 @@ const StyledShop = styled.div `
     .music {
       position: fixed;
       bottom: 30px;
-      left: 40px;
+      left: 55px;
       z-index: 3;
     }
+
+    .about {
+      background-color: #fff;
+      padding: 40px 55px;
+    }
+    .about__inf {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      height: 500px;
+    }
+    .about__from-title {
+      letter-spacing: .025em;
+      font-size: .7rem;
+      line-height: 2.25rem;
+      margin-bottom: 5px;
+    }
+    .about__from-subtitle {
+      opacity: .3;
+      color: #000;
+      line-height: 2.25rem;
+      font-size: 1.5rem;
+      font-family: 'proofFont', sans-serif;
+    }
+
+    .about__imgs {
+      margin: 30px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
     @media only screen and (max-width: 1040px) {
       .shop__item {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .about__from {
+        display: none;
+      }
+      .about__inf {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .ative__page-item {
+        font-size: 1.4rem;
+      }
+      .shop__iten-name {
+        font-size: 18px;
+      }
+      .shop__item-about, .shop-item__list-items {
+        font-size: 15px;
+      }
+      .about__imgs {
         grid-template-columns: repeat(1, 1fr);
       }
     }
 `
 
 function Shop() {
+
+  const navigate = useNavigate();
+
   return (
     <StyledShop>
-        <div className="body">
-            <section className='item'>
             <HomeNav/>
-               <div className="music">
+            <section className='item'>
+              <div className="music">
               <HomeMusic/>
             </div>
             <main className="main">
-            <p className="acive__page-item"><span className="acive-page">Home</span> / <span>Twin Tigers Jacket</span></p>
+            <p className="acive__page-item"><span className="acive-page" onClick={() => navigate(PATH.homePage)}>Home</span> / <span>Twin Tigers Jacket</span></p>
               <div className='shop__item'>
-                <div className="shop__swiper">
-                  <SwiperSlider/>
-                </div>
+                <SwiperSlider/>
                 <div className="shop__describe">
                   <div className="shop__name-and-price">
                     <h3 className="shop__iten-name">TWIN TIGERS JACKET</h3>
@@ -146,8 +204,7 @@ function Shop() {
               </div>
             </main>
             </section>
-           
-        </div>
+            <About/>
     </StyledShop>
   )
 }

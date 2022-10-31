@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 function MainLayout() {
     return (
-        <div className="main">
+        <React.Fragment>
             <Outlet/>
-        </div>
+        </React.Fragment>
     )
 };
 

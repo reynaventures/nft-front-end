@@ -17,7 +17,11 @@ width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 96%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
 }
 .header__logo {
     width: 75px;
@@ -29,6 +33,7 @@ width: 100%;
     border-radius: 0.25rem;
     margin-right: 5px;
     background-color: rgb(192,53,64);
+    z-index: 99999;
     cursor: pointer;
     &:hover {
         background-color: rgb(223, 37, 53);
