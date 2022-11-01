@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import HomeNav from '../Components/HomeNav';
 import SwiperSlider from '../Components/Swiper';
 import shopItemMini from '../assets/img/shopItemMini.png';
-import HomeMusic from '../Components/HomeMusic';
 import { PATH } from '../constans/routes';
 import { useNavigate } from 'react-router-dom';
 import About from '../Components/About';
@@ -106,13 +104,6 @@ const StyledShop = styled.div `
       font-size: .75rem;
       line-height: 1rem;
     }
-    .music {
-      position: fixed;
-      bottom: 30px;
-      left: 55px;
-      z-index: 3;
-    }
-
     .about {
       background-color: #fff;
       padding: 40px 55px;
@@ -175,11 +166,7 @@ function Shop() {
 
   return (
     <StyledShop>
-            <HomeNav/>
             <section className='item'>
-              <div className="music">
-              <HomeMusic/>
-            </div>
             <main className="main">
             <p className="acive__page-item"><span className="acive-page" onClick={() => navigate(PATH.homePage)}>Home</span> / <span>Twin Tigers Jacket</span></p>
               <div className='shop__item'>

@@ -4,6 +4,7 @@ import { ROUTES } from '../constans/routes';
 import MainLayout from '../Layouts/MainLayout/MainLayout';
 import Home from '../Scenes/Home';
 import Shop from '../Scenes/Shop';
+import MindMap from '../Scenes/MindMap';
 
 function RootRoute() {
     return (
@@ -13,6 +14,9 @@ function RootRoute() {
             </Route>
             <Route path={ROUTES.shopPage} element={<MainLayout/>}>
                 <Route path={ROUTES.shopPage} element={<Shop/>}></Route>
+            </Route>
+            <Route path={ROUTES.mindMapPage} element={<MainLayout/>}>
+                <Route path={ROUTES.mindMapPage} element={<MindMap/>}></Route>
             </Route>
             <Route path='*' element={<h2 className='erorr--not-found'>Ресурс не найден!</h2>}></Route>
         </Routes>

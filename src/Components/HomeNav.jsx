@@ -177,8 +177,12 @@ function HomeNav() {
             </li>
             <li className="header__item">Gallery</li>
             <li className="header__item">World</li>
-            <li className={location === PATH.shopPage ? "header__item header__item--active" : "header__item"} onClick={() => navigate(PATH.shopPage)}>Shop</li>
-            <li className="header__item">MindMap</li>
+            <li className={location === PATH.shopPage ? 
+                "header__item header__item--active" : 
+                "header__item"} onClick={() => navigate(PATH.shopPage)}>Shop</li>
+            <li className={location === PATH.mindMapPage ? 
+                "header__item header__item--active" : 
+                "header__item"} onClick={() => navigate(PATH.mindMapPage)}>MindMap</li>
             <li className="header__item header__item-more" onClick={() => {
                 setHandleMore(!handleMore);
                 setHandleBuy(false);

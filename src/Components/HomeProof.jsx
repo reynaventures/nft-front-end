@@ -12,6 +12,10 @@ width: 43%;
     background-color: #000;
     padding: 5px 10px;
     border-radius: 5px;
+    position: absolute;
+    width: 672px;
+    bottom: 40px;
+    right: 40px;
 }
 .home__proof-left {
     display: flex;
@@ -82,6 +86,11 @@ width: 43%;
 
 @media only screen and (max-width: 1040px) {
     width: 100%;
+    .home__proof {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+    }
     .home__proof-title {
         font-size: 9px;
     }

@@ -14,6 +14,10 @@ const StyledHomeMusic = styled.div `
     background-color: ${(props) => props.theme.backgroundColor};
     transition: 0.3s all;
     box-shadow: 0 0 30px #00000026;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 99;
 }
 .home__music-wrap {
     position: relative;
