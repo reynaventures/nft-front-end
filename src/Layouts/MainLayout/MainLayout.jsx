@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import HomeNav from "../../Components/HomeNav";
-import HomeMusic from "../../Components/HomeMusic";
+import MainNav from "../../Components/MainNav";
+import Music from "../../Components/Music";
 
 function MainLayout() {
     return (
         <React.Fragment>
-            <HomeNav/>
+            <MainNav/>
             <Outlet/>
-            <HomeMusic/>
+            <Music/>
         </React.Fragment>
     )
 };

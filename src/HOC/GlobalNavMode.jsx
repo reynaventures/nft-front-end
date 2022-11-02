@@ -7,7 +7,7 @@ function GlobalNavMode(props) {
     const location = useLocation();
 
     const userLocation = () => {
-      if(location.pathname === '/') {
+      if(location.pathname === '/' || location.pathname === '/license') {
         return lightNav;
       } else {
         return darkNav;

@@ -5,13 +5,12 @@ import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
 import { IoLanguageOutline } from 'react-icons/io5';
 import BurgerMenu from './BurgerMenu';
-import menuItem from '../assets/svg/menuItem.svg';
 import { RiArrowRightUpLine } from 'react-icons/ri'
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { PATH } from '../constans/routes';
 
-const StyledHomeNav = styled.div `
+const StyledMainNav = styled.div `
 width: 100%;
   .home__header {
     display: flex;
@@ -155,7 +154,7 @@ width: 100%;
 }
 `
 
-function HomeNav() {
+function MainNav() {
 
     const navigate = useNavigate();
     const [handleMore, setHandleMore] = useState(false);
@@ -164,7 +163,7 @@ function HomeNav() {
     const location = window.location.pathname;
 
   return (
-    <StyledHomeNav>
+    <StyledMainNav>
       <header className='home__header'>
       <div className="header__logo" onClick={() => navigate(PATH.homePage)}>
         <img src={AzukiLogoWhite} alt="" />
@@ -194,7 +193,7 @@ function HomeNav() {
                         <li className="header__hidden-item">the garden</li>
                         <li className="header__hidden-item">manifesto</li>
                         <li className="header__hidden-item">careers</li>
-                        <li className="header__hidden-item">license</li>
+                        <li className="header__hidden-item" onClick={() => navigate(PATH.license)}>license</li>
                         <li className="header__hidden-item">terms & conditions</li>
                     </ul>
                 }
@@ -237,9 +236,9 @@ function HomeNav() {
         </ul>
       </nav>
     </header>
-    </StyledHomeNav>
+    </StyledMainNav>
     
   )
 }
 
-export default HomeNav
+export default MainNav
