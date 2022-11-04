@@ -1,72 +1,71 @@
 import React from 'react'
-import butterfly from '../assets/videos/butterfly.mp4';
 import HomeProof from '../Components/HomeProof';
 import styled from 'styled-components';
-import nft1 from '../assets/img/nft1.png';
-import nft2 from '../assets/img/nft2.png';
-import nft3 from '../assets/img/nft3.png';
-import nft4 from '../assets/img/nft4.png';
-import nft5 from '../assets/img/nft5.png';
-import nft6 from '../assets/img/nft6.png';
-import nft7 from '../assets/img/nft7.png';
-import nft8 from '../assets/img/nft8.png';
-import nft9 from '../assets/img/nft9.png';
-import nft10 from '../assets/img/nft10.png';
-import nft11 from '../assets/img/nft11.png';
-import nft12 from '../assets/img/nft12.png';
-import nft13 from '../assets/img/nft13.png';
-import nft14 from '../assets/img/nft14.png';
-import nft15 from '../assets/img/nft15.png';
-import nft16 from '../assets/img/nft16.png';
-import nft17 from '../assets/img/nft17.png';
-import nft18 from '../assets/img/nft18.png';
-import nft19 from '../assets/img/nft19.png';
-import nft20 from '../assets/img/nft20.png';
-import nft21 from '../assets/img/nft21.png';
-import nft22 from '../assets/img/nft1.png';
-import nft23 from '../assets/img/nft2.png';
-import nft24 from '../assets/img/nft3.png';
-import nft25 from '../assets/img/nft4.png';
-import nft26 from '../assets/img/nft5.png';
-import nft27 from '../assets/img/nft6.png';
-import nft28 from '../assets/img/nft7.png';
-import nft29 from '../assets/img/nft8.png';
-import nft30 from '../assets/img/nft9.png';
-import nft31 from '../assets/img/nft10.png';
-import nft32 from '../assets/img/nft11.png';
-import nft33 from '../assets/img/nft12.png';
-import nft34 from '../assets/img/nft13.png';
-import nft35 from '../assets/img/nft14.png';
-import nft36 from '../assets/img/nft15.png';
-import nft37 from '../assets/img/nft16.png';
-import nft38 from '../assets/img/nft17.png';
-import nft39 from '../assets/img/nft18.png';
-import nft40 from '../assets/img/nft19.png';
-import nft41 from '../assets/img/nft20.png';
-import nft42 from '../assets/img/nft21.png';
-import nft43 from '../assets/img/nft1.png';
-import nft44 from '../assets/img/nft2.png';
-import nf45 from '../assets/img/nft3.png';
-import nft46 from '../assets/img/nft4.png';
-import nft47 from '../assets/img/nft5.png';
-import nft48 from '../assets/img/nft6.png';
-import nft49 from '../assets/img/nft7.png';
-import nft50 from '../assets/img/nft8.png';
-import nft51 from '../assets/img/nft9.png';
-import nft52 from '../assets/img/nft10.png';
-import nft53 from '../assets/img/nft11.png';
-import nft54 from '../assets/img/nft12.png';
-import nft55 from '../assets/img/nft13.png';
-import nft56 from '../assets/img/nft14.png';
-import nft57 from '../assets/img/nft15.png';
-import nft58 from '../assets/img/nft16.png';
-import nft59 from '../assets/img/nft17.png';
-import nft60 from '../assets/img/nft18.png';
-import nft61 from '../assets/img/nft19.png';
-import nft62 from '../assets/img/nft20.png';
-import nft63 from '../assets/img/nft21.png';
-import nft64 from '../assets/img/nft1.png';
-import nft65 from '../assets/img/nft2.png';
+import img1 from '../assets/img/img1.png';
+import img2 from '../assets/img/img2.png';
+import img3 from '../assets/img/img3.png';
+import img4 from '../assets/img/img4.png';
+import img5 from '../assets/img/img5.png';
+import img6 from '../assets/img/img6.png';
+import img7 from '../assets/img/img7.png';
+import img8 from '../assets/img/img8.png';
+import img9 from '../assets/img/img9.png';
+import img10 from '../assets/img/img10.png';
+import img11 from '../assets/img/img11.png';
+import img12 from '../assets/img/img12.png';
+import img13 from '../assets/img/img13.png';
+import img14 from '../assets/img/img14.png';
+import img15 from '../assets/img/img15.png';
+import img16 from '../assets/img/img16.png';
+import img17 from '../assets/img/img17.png';
+import img18 from '../assets/img/img18.png';
+import img19 from '../assets/img/img19.png';
+import img20 from '../assets/img/img20.png';
+import img21 from '../assets/img/img21.png';
+import img22 from '../assets/img/img1.png';
+import img23 from '../assets/img/img2.png';
+import img24 from '../assets/img/img3.png';
+import img25 from '../assets/img/img4.png';
+import img26 from '../assets/img/img5.png';
+import img27 from '../assets/img/img6.png';
+import img28 from '../assets/img/img7.png';
+import img29 from '../assets/img/img8.png';
+import img30 from '../assets/img/img9.png';
+import img31 from '../assets/img/img10.png';
+import img32 from '../assets/img/img11.png';
+import img33 from '../assets/img/img12.png';
+import img34 from '../assets/img/img13.png';
+import img35 from '../assets/img/img14.png';
+import img36 from '../assets/img/img15.png';
+import img37 from '../assets/img/img16.png';
+import img38 from '../assets/img/img17.png';
+import img39 from '../assets/img/img18.png';
+import img40 from '../assets/img/img19.png';
+import img41 from '../assets/img/img20.png';
+import img42 from '../assets/img/img21.png';
+import img43 from '../assets/img/img1.png';
+import img44 from '../assets/img/img2.png';
+import img45 from '../assets/img/img3.png';
+import img46 from '../assets/img/img4.png';
+import img47 from '../assets/img/img5.png';
+import img48 from '../assets/img/img6.png';
+import img49 from '../assets/img/img7.png';
+import img50 from '../assets/img/img8.png';
+import img51 from '../assets/img/img9.png';
+import img52 from '../assets/img/img10.png';
+import img53 from '../assets/img/img11.png';
+import img54 from '../assets/img/img12.png';
+import img55 from '../assets/img/img13.png';
+import img56 from '../assets/img/img14.png';
+import img57 from '../assets/img/img15.png';
+import img58 from '../assets/img/img16.png';
+import img59 from '../assets/img/img17.png';
+import img60 from '../assets/img/img18.png';
+import img61 from '../assets/img/img19.png';
+import img62 from '../assets/img/img20.png';
+import img63 from '../assets/img/img21.png';
+import img64 from '../assets/img/img64.png';
+import img65 from '../assets/img/img65.png';
 
 const StyledHome = styled.div `
 position: absolute;
@@ -182,283 +181,277 @@ function Home() {
     return (
         <StyledHome>
             <div className='home'>
-{/*             <video className='home__video' src={butterfly} autoPlay muted loop/>
-                <img src={mobileBg} className='home__video' alt="" /> */}
                 <div className="body">
                 <div className="home__animation">
                     <ul className="home__animation-row first-row">
                         <li className="home__animation-item">
-                            <img src={nft1} alt="" />
+                            <img src={img1} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft2} alt="" />
+                            <img src={img2} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft3} alt="" />
+                            <img src={img3} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft4} alt="" />
+                            <img src={img4} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft5} alt="" />
+                            <img src={img5} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft6} alt="" />
+                            <img src={img6} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft7} alt="" />
+                            <img src={img7} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft8} alt="" />
+                            <img src={img8} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft9} alt="" />
+                            <img src={img9} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>                        
                         <li className="home__animation-item">
-                            <img src={nft10} alt="" />
+                            <img src={img10} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft11} alt="" />
+                            <img src={img11} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft12} alt="" />
+                            <img src={img12} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft13} alt="" />
+                            <img src={img13} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                     </ul>
                     <ul className="home__animation-row second-row">
-                    <li className="home__animation-item">
-                            <img src={nft1} alt="" />
+                        <li className="home__animation-item">
+                            <img src={img14} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft2} alt="" />
+                            <img src={img15} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft3} alt="" />
+                            <img src={img16} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft4} alt="" />
+                            <img src={img17} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft5} alt="" />
+                            <img src={img18} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft6} alt="" />
+                            <img src={img19} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft7} alt="" />
+                            <img src={img20} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft8} alt="" />
+                            <img src={img21} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft9} alt="" />
+                            <img src={img22} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>                        
                         <li className="home__animation-item">
-                            <img src={nft10} alt="" />
+                            <img src={img23} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft11} alt="" />
+                            <img src={img24} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft12} alt="" />
+                            <img src={img25} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft13} alt="" />
+                            <img src={img26} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
-                        
                     </ul>
                     <ul className="home__animation-row third-row">
-                    <li className="home__animation-item">
-                            <img src={nft1} alt="" />
+                        <li className="home__animation-item">
+                            <img src={img27} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft2} alt="" />
+                            <img src={img28} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft3} alt="" />
+                            <img src={img29} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft4} alt="" />
+                            <img src={img30} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft5} alt="" />
+                            <img src={img31} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft6} alt="" />
+                            <img src={img32} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft7} alt="" />
+                            <img src={img33} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft8} alt="" />
+                            <img src={img34} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft9} alt="" />
+                            <img src={img35} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>                        
                         <li className="home__animation-item">
-                            <img src={nft10} alt="" />
+                            <img src={img36} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft11} alt="" />
+                            <img src={img37} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft12} alt="" />
+                            <img src={img38} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft13} alt="" />
+                            <img src={img39} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
-                        
                     </ul>
                     <ul className="home__animation-row four-row">
-                    <li className="home__animation-item">
-                            <img src={nft1} alt="" />
+                        <li className="home__animation-item">
+                            <img src={img40} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft2} alt="" />
+                            <img src={img41} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft3} alt="" />
+                            <img src={img42} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft4} alt="" />
+                            <img src={img43} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft5} alt="" />
+                            <img src={img44} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft6} alt="" />
+                            <img src={img45} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft7} alt="" />
+                            <img src={img46} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft8} alt="" />
+                            <img src={img47} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft9} alt="" />
+                            <img src={img48} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>                        
                         <li className="home__animation-item">
-                            <img src={nft10} alt="" />
+                            <img src={img49} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft11} alt="" />
+                            <img src={img50} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft12} alt="" />
+                            <img src={img51} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft13} alt="" />
+                            <img src={img52} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
-                        
                     </ul>
                     <ul className="home__animation-row fifth-row">
-                    <li className="home__animation-item">
-                            <img src={nft1} alt="" />
+                        <li className="home__animation-item">
+                            <img src={img53} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft2} alt="" />
+                            <img src={img54} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft3} alt="" />
+                            <img src={img55} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft4} alt="" />
+                            <img src={img56} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft5} alt="" />
+                            <img src={img57} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft6} alt="" />
+                            <img src={img58} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft7} alt="" />
+                            <img src={img59} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft8} alt="" />
+                            <img src={img60} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft9} alt="" />
+                            <img src={img61} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>                        
                         <li className="home__animation-item">
-                            <img src={nft10} alt="" />
+                            <img src={img62} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft11} alt="" />
+                            <img src={img63} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft12} alt="" />
+                            <img src={img64} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
                         <li className="home__animation-item">
-                            <img src={nft13} alt="" />
+                            <img src={img65} alt="" />
                             <h3 className='home__item-name'>Name</h3>
                         </li>
-                        
                     </ul>
                 </div>
                     <HomeProof/>
