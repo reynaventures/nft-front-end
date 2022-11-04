@@ -102,7 +102,7 @@ width: 100%;
     padding: 0.25rem 0.55rem 0.25rem 0.25rem;
     background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    bottom: -130px;
+    bottom: -30px;
     left: 60%;
     transform: translateX(-50%);
     border-radius: 0.375rem;
@@ -182,8 +182,6 @@ function MainNav() {
 </svg>
 
             </li>
-            <li className="header__item">Gallery</li>
-            <li className="header__item">World</li>
             <li className={location === PATH.shopPage ? 
                 "header__item header__item--active" : 
                 "header__item"} onClick={() => navigate(PATH.shopPage)}>Shop</li>
@@ -198,9 +196,6 @@ function MainNav() {
                 More <span className='home__arrow-down'><RiArrowDownSLine/></span>
                 {handleMore &&
                     <ul className="header__hidden">
-                        <li className="header__hidden-item">the garden</li>
-                        <li className="header__hidden-item">manifesto</li>
-                        <li className="header__hidden-item">careers</li>
                         <li className="header__hidden-item" onClick={() => navigate(PATH.license)}>TERMS & CONDITIONS</li>
                         <li className="header__hidden-item" onClick={() => navigate(PATH.privacyPolicy)}>PRIVACY POLICY</li>
                     </ul>
@@ -214,10 +209,10 @@ function MainNav() {
                 Buy <span className='home__arrow-down'><RiArrowDownSLine/></span>
                 {handleBuy &&
                     <ul className="header__hidden-buy">
-                        <li className="header__hidden-item"><p>AZUKI</p> <p>(OS)</p> <RiArrowRightUpLine/> </li>
-                        <li className="header__hidden-item"><p>AZUKI</p>  <p>(LR)</p> <RiArrowRightUpLine/></li>
-                        <li className="header__hidden-item"><p>BEANS</p>  <p>(OS)</p> <RiArrowRightUpLine/></li>
-                        <li className="header__hidden-item"><p>BEANS</p>  <p>(LR)</p> <RiArrowRightUpLine/></li>
+                        <li className="header__hidden-item"> <a target='blank' href="https://opensea.io/collection/eitnyworld"><p>ETNY</p> <p>(OS)</p> <RiArrowRightUpLine/> </a> </li>
+                        <li className="header__hidden-item"> <a target='blank' href="https://tofunft.com/"><p>ETNY</p>  <p>(TF)</p> <RiArrowRightUpLine/></a> </li>
+                        <li className="header__hidden-item"> <a target='blank' href="https://opensea.io/collection/wearyapeyc"><p>WAYC</p>  <p>(OS)</p> <RiArrowRightUpLine/></a> </li>
+                        <li className="header__hidden-item"> <a target='blank' href="https://tofunft.com/collection/wearyapeyacht/items"><p>WAYC</p>  <p>(TF)</p> <RiArrowRightUpLine/></a> </li>
                     </ul>
                 }
             </li>

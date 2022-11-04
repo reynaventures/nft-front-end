@@ -8,16 +8,16 @@
 }
 
 @font-face {
-    font-family: mainFont;
-    src: url(../assets/fonts/MonoRegular.woff2); /* Путь к файлу со шрифтом */
-}
-@font-face {
     font-family: proofFont;
     src: url(../assets/fonts/MSBee-Regular.woff2); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: proofBoldFont;
     src: url(../assets/fonts/MSBee-Bold.woff2); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: mainFont;
+	src: url(../assets/fonts/EuclidSquare-Medium.woff2);
 }
 
 img {
