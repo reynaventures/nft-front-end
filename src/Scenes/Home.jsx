@@ -124,7 +124,6 @@ background-color: #000;
     }
 
     .home__animation-item {
-        border: 1px solid #fff;
         min-width: 225px;
         width: 225px;
         height: 127px;
