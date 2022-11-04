@@ -1,7 +1,7 @@
 {
-  "name": "azuki",
+  "name": "eitny",
   "version": "1.0.0",
-  "description": "nft-front-end",
+  "description": "eitny",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
