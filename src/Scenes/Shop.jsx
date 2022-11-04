@@ -9,7 +9,6 @@ import About from '../Components/About';
 const StyledShop = styled.div `
       color: #000;
       display: block;
-      font-family: 'proofFont', sans-serif;
       position: absolute;
       top: 0;
       left: 0;
@@ -125,7 +124,6 @@ const StyledShop = styled.div `
       color: #000;
       line-height: 2.25rem;
       font-size: 1.5rem;
-      font-family: 'proofFont', sans-serif;
     }
 
     .about__imgs {

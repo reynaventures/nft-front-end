@@ -19,7 +19,6 @@ align-items: center;
         max-width: 1400px;
         padding: 5px 25px;
         margin: 0 auto;
-        font-family: 'proofFont', sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;

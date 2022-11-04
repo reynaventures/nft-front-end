@@ -8,16 +8,12 @@
 }
 
 @font-face {
-    font-family: proofFont;
-    src: url(../assets/fonts/MSBee-Regular.woff2); /* Путь к файлу со шрифтом */
-}
-@font-face {
     font-family: proofBoldFont;
-    src: url(../assets/fonts/MSBee-Bold.woff2); /* Путь к файлу со шрифтом */
+    src: url(../assets/fonts/EuclidSquare-Bold.woff2); /* Путь к файлу со шрифтом */
 }
 @font-face {
 	font-family: mainFont;
-	src: url(../assets/fonts/EuclidSquare-Medium.woff2);
+	src: url(../assets/fonts/EuclidSquare-Regular.woff2); /* Путь к файлу со шрифтом */
 }
 
 img {
@@ -28,7 +24,7 @@ img {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: rgb(0, 0, 0);
 }
 
 body {

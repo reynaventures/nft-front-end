@@ -28,7 +28,6 @@ width: 43%;
     color: rgba(255,255,255, 0.4);
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-family: 'proofFont', sans-serif;
 }
 
 .home__proof-subtitle {
