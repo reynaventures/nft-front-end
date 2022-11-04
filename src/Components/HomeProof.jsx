@@ -12,7 +12,7 @@ width: 43%;
     background-color: #000;
     padding: 5px 10px;
     border-radius: 5px;
-    position: absolute;
+    position: fixed;
     width: 672px;
     bottom: 40px;
     right: 40px;
@@ -109,14 +109,14 @@ function HomeProof() {
   return (
     <StyledHomeProof>
       <div className="home__proof">
-      <div className="home__proof-left">
+{/*       <div className="home__proof-left">
           <img src={dragonGold} className='home__proof-img' alt="" />
           <div className="home__proof-titles">
               <h5 className="home__proof-title">proof of skate</h5>
               <h3 className="home__proof-subtitle">AUCTION COMPLETE</h3>
           </div>
       </div>
-      <button type='button' className='btn home__proof-view'>view <FaArrowRight className='home__icon-arrow'/></button>
+      <button type='button' className='btn home__proof-view'>view <FaArrowRight className='home__icon-arrow'/></button> */}
     </div>
     </StyledHomeProof>
   )

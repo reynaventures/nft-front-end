@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard4 from '../../assets/img/mindmapCard4.png';
+import mindmapCard4 from '../../assets/img/Card4.png';
 
 const StyledPhysicalContent = styled.div `
     .physical {
@@ -56,6 +56,11 @@ const StyledPhysicalContent = styled.div `
         max-width: 70%;
         align-self: center;
     }
+    .physical__content {
+        p {
+            margin-bottom: 25px;
+        }
+    }
 `
 
 function PhysicalContent({ setHandleCardId }) {
@@ -63,21 +68,13 @@ function PhysicalContent({ setHandleCardId }) {
     <StyledPhysicalContent>
         <div className="physical">
             <div className="physical__content">
-                <h2 className="physical__title">PHYSICAL WORLD <span> //</span></h2>
-                <ul className='physical__list'>
-                    <li className="physical__item">
-                        <h5 className='physical__item-title'>Streetwear <span>COMPLETE</span></h5>
-                        <p className="physical__item-text">Members of The Garden can expect exclusive drops in perpetuity. First drop coming very soon.</p>
-                    </li>
-                    <li className="physical__item">
-                        <h5 className='physical__item-title'>Collectibles <span>IN PROGRESS</span></h5>
-                        <p className="physical__item-text">Design phase has commenced...</p>
-                    </li>
-                    <li className="physical__item">
-                        <h5 className='physical__item-title'>Expanding Core Team<span>IN PROGRESS</span></h5>
-                        <p className="physical__item-text">We just brought on steamboy, Daph, Demna, and njoo as full-time members. Our careers page will be live soon with additional open roles.</p>
-                    </li>
-                </ul>
+                <h2 className="physical__title">What purpose projects are we supporting? <span> //</span></h2>
+                <p>We are committed to our community, the longevity of web 3 and IRL initiatives. The world is intersectional, and so are we. We will be initially focusing 20% of our minting proceeds to support Reyna Ventures Projects in the following themes:
+‍</p>
+                <p>Mental wellness - Providing access, resources and support to licensed therapy, tools and counseling services.
+Sustainability - Offsetting the carbon used to mint initial collection, and supporting projects that advance sustainability in web3 and in the physical world.
+Inclusivity and equitable wealth creation - Art, creators, projects, investments that are led by underrepresented and undercapitalized minorities.</p>
+                <p>This is only the beginning… more purpose projects will be added with the help and direction of our community.</p>
             </div>
             <img className='physical__img' src={mindmapCard4} alt="" />
             <span className="physical__cross" onClick={() => setHandleCardId(false)}>╳</span>

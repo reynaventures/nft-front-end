@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard7 from '../../assets/img/mindmapCard7.png';
+import mindmapCard7 from '../../assets/img/Card7.png';
 
 const StyledConnectContent = styled.div `
         .seedling {
@@ -57,13 +57,8 @@ function ConnentContent({ setHandleCardId }) {
         <StyledConnectContent>
             <div className="seedling">
                 <div className="seedling__content">
-                    <h2 className="seedling__title">VISION & VALUE  <span> //</span></h2>
-                    <p className="seedling__text">"Human history is, in essence, a history of ideas." - H.G. Wells
-What ideas do you have? Let's write history together.</p>
-                    <form action="#">
-                        <textarea className='seedling__textarea' name="" id="" cols="60" rows="13" placeholder='Start Typing...'></textarea>
-                        <button className='seedling__btn btn' type='submit'>SUBMIT IDEA</button>
-                    </form>
+                    <h2 className="seedling__title">How do I stay updated and safe?<span> //</span></h2>
+                    <p className="seedling__text">Follow the official Eitny twitter account or discord. All announcements will be made there. Be careful of copycats, scammers and always check you are on the official twitter or website.</p>
                 </div>
                 <img className='seedling__img' src={mindmapCard7} alt="" />
                 <span className="seedling__cross" onClick={() => setHandleCardId(false)}>╳</span>

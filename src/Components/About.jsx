@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ShopItem from './ShopItems'
-import shopJacket3 from '../assets/img/shopJacket3.jpg'
-import shopJacket4 from '../assets/img/shopJacket4.jpg'
+import shopJacket3 from '../assets/img/shop5.png';
+import shopJacket4 from '../assets/img/shop6.png';
 import { aboutListItems } from '../constans/shopItems';
 
 function About() {
@@ -10,7 +10,7 @@ function About() {
 
   return (
     <section className='about'>
-    <div className="about__inf">
+    {/* <div className="about__inf">
       <div className="about__from">
         <h4 className="about__from-title">FROM TAKEDA'S WORKBENCH</h4>
         <h2 className="about__from-subtitle">Designed in Los Angeles by Azuki's in-house tailor, Takeda. Tiger embroidery design by Steamboy.</h2>
@@ -29,7 +29,7 @@ function About() {
           )}
         )}
       </ul>
-    </div>
+    </div> */}
     <div className="about__imgs">
       <img src={shopJacket3} alt="" className="about__img" />
       <img src={shopJacket4} alt="" className="about__img" />

@@ -10,6 +10,8 @@ import BridgeContent from '../Components/mindmapCardContent.jsx/BridgeContent';
 import SeedlingContent from '../Components/mindmapCardContent.jsx/SeedlinghtContent';
 import ConnentContent from '../Components/mindmapCardContent.jsx/ConnentContent';
 import { StyledMindMap } from './StyledMindmap';
+import Card8 from '../Components/mindmapCardContent.jsx/Card8';
+import Card9 from '../Components/mindmapCardContent.jsx/Card9';
 
 function MindMap() {
 
@@ -30,6 +32,10 @@ function MindMap() {
                 return <SeedlingContent setHandleCardId={setHandleCardId}/>
             case 6:
                 return <ConnentContent setHandleCardId={setHandleCardId}/>
+            case 7:
+                return <Card8 setHandleCardId={setHandleCardId}/>
+            case 8:
+                return <Card9 setHandleCardId={setHandleCardId}/>
             default:
                 console.log('nothing');
         }
@@ -39,12 +45,12 @@ function MindMap() {
         <StyledMindMap>
             <div className="mindmap">
                 <div className="mindmap__info">
-                    <h1 className="mindmap__title">mindmap <span> //</span></h1>
-                    <p className="mindmap__subtitle">We are guided by a simple yet profound vision - create the largest decentralized brand for the metaverse that is built and owned by the community.</p>
-                    <img className='mindmap__img' src={mindMapGirl} alt="" />
+                    <h1 className="mindmap__title">You're Entering  <br/>Eitny World <span> //</span></h1>
+                    <p className="mindmap__subtitle">We’ve caught glimpses of Eitny in our dreams…. but something always felt too real. A splintering in our reality is getting wider. The Wanderers of this new existence are nearing. Once you’re here, who will you become?</p>
+                    <p>Take the trip. Shift reality.</p>
                 </div>
                 <ul className="mindmap__table">
-                    {contentCard(handleCardId)};
+                    {contentCard(handleCardId)}
                     {mindmapCards.map((card) => {
                         return (
                             <li key={card.id}className={`mindmap__card mindmap__card-${card.title.split()[0].toLocaleLowerCase()}`} onClick={() => {setHandleCardId(card.id)}}>

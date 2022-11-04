@@ -127,7 +127,7 @@ function HomeMusic() {
   return (
     <StyledHomeMusic>
         <div className='music'>
-            {!fullMusicBlock ?
+            {/* {!fullMusicBlock ?
                     <div className="home__music">
                     <div className="home__music-wrap">
                         <div className="home__music-plus" onClick={() => setFullMusicBlock(true)}>+</div>
@@ -152,7 +152,7 @@ function HomeMusic() {
                     </div>
                 </div>
             </div>
-            }
+            } */}
         </div>
     </StyledHomeMusic>
     

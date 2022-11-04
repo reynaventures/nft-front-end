@@ -1,14 +1,12 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import shopJacket1 from '../assets/img/shop-jacket1.jfif';
-import shopJacket2 from '../assets/img/shopJacket2.jfif';
-import shopJacket3 from '../assets/img/shopJacket3.jpg';
-import shopJacket4 from '../assets/img/shopJacket4.jpg';
-import shopJacket5 from '../assets/img/shopJacket5.jfif';
-import shopJacket6 from '../assets/img/shopJacket6.jfif';
-import shopJacket7 from '../assets/img/shopJacket7.jfif';
-import shopJacket8 from '../assets/img/shopJacket8.jfif';
+import shopJacket1 from '../assets/img/shop1.png';
+import shopJacket2 from '../assets/img/shop2.png';
+import shopJacket3 from '../assets/img/shop3.png';
+import shopJacket4 from '../assets/img/shop4.png';
+import shopJacket5 from '../assets/img/shop5.png';
+import shopJacket6 from '../assets/img/shop6.png';
 import styled from 'styled-components';
 
 import 'swiper/scss';
@@ -90,16 +88,6 @@ function SwiperSlider() {
             <SwiperSlide className='swiper__item'>
                 <div className="swiper__item-wrap">
                     <img src={shopJacket6} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide className='swiper__item'>
-                <div className="swiper__item-wrap">
-                    <img src={shopJacket7} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide className='swiper__item'>
-                <div className="swiper__item-wrap">
-                    <img src={shopJacket8} alt="" />
                 </div>
             </SwiperSlide>
         </Swiper>

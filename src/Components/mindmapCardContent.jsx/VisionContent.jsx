@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard1 from '../../assets/img/mindmapCard1.png';
+import mindmapCard1 from '../../assets/img/Card1.png';
 
 const StyledVisionContent = styled.div `
     .vision {
@@ -64,23 +64,8 @@ function VisionContent({ setHandleCardId }) {
         <StyledVisionContent>
             <div className="vision">
                 <div className="vision__content">
-                    <h2 className="vision__title">VISION & VALUE  <span> //</span></h2>
-                    <p className="vision__text">We are the skaters of the internet. We’re skating between the blurred lines of the physical and digital worlds as they are beginning to blend. We are a community of individuals who aren’t afraid to push the boundaries, challenge the status quo, and communicate boldly. We’re making an impact on web3 culture. Our vision is to create the largest decentralized brand for the metaverse that is built and owned by the community.</p>
-                    <p>Values:</p>
-                    <ul className='vision__list'>
-                        <li className="vision__item">
-                            <span className='vision__item-title'>Community first:</span>
-                            <p className="vision__item-text">Everything starts and ends with the community. The moment we prioritize something other than the community will be the beginning of the end. We won't let that happen, because we'll always have community as the #1 value of Azuki.</p>
-                        </li>
-                        <li className="vision__item">
-                            <span className='vision__item-title'>Dope sh*t only:</span>
-                            <p className="vision__item-text">Azuki is creative, brave, relentless. It's easy to follow trends and improve incrementally. It's harder to be original and do dope sh*t. We pave our own path.</p>
-                        </li>
-                        <li className="vision__item">
-                            <span className='vision__item-title'>Trust the process:</span>
-                            <p className="vision__item-text">Good things take time. Decentralized movements can't turn corners as quickly as centralized movements, and that's both a blessing and a curse. Decentralized doesn't mean there can't be leaders. The core team will provide guard rails and resources for all beans to grow together, but it won't happen overnight. !ttp</p>
-                        </li>
-                    </ul>
+                    <h2 className="vision__title">What is Eitny's mission?  <span> //</span></h2>
+                    <p className="vision__text">We are building a paradigm-shifting product, community and platform where actions in web3 create purposeful environmental and social progress in the physical world. NFTs and Blockchain tech have started a digital revolution, but we believe tokens can be used for more. Our token will connect utility and financial opportunity with purpose, goals and physical world impact - right from the start.</p>
                 </div>
                 <img className='vision__img' src={mindmapCard1} alt="" />
                 <span className="vision__cross" onClick={() => setHandleCardId(false)}>╳</span>

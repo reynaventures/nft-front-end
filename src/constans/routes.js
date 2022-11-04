@@ -3,6 +3,7 @@ export const ROUTES = {
     shopPage: '/shop',
     mindMapPage: '/mindMap',
     license: '/license',
+    privacyPolicy: '/privacyPolicy',
 }
 
 export const PATH = {
@@ -10,4 +11,5 @@ export const PATH = {
     shopPage: '/shop',
     mindMapPage: '/mindMap',
     license: '/license',
+    privacyPolicy: '/privacyPolicy',
 }

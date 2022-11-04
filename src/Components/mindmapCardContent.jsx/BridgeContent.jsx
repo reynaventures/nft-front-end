@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard5 from '../../assets/img/mindmapCard5.png';
+import mindmapCard5 from '../../assets/img/Card5.png';
 
 const StyledBridgeContent = styled.div `
     .bridge {
@@ -85,26 +85,8 @@ function BridgeContent({ setHandleCardId }) {
         <StyledBridgeContent>
             <div className="bridge">
                 <div className="bridge__content">
-                    <h2 className="bridge__title">BRIDGE BETWEEN <span> //</span></h2>
-                    <p>The bridge between the physical and digital world presents a playground to create a new type of media. Here we will experiment with meta-games, interactive experiences, and unique ways to grow an IP. Riot Games has created an interesting playbook of expanding their IP through a show like Arcane. By allowing ownership in the characters themselves, Azuki along with the community is positioned to expand beyond this playbook.</p>
-                    <ul className='bridge__list'>
-                        <li className="bridge__item">
-                            <h5 className='bridge__item-title'>Custom Verification Bot <span>COMPLETE</span></h5>
-                            <p className="bridge__item-text">hird party bots (e.g. Collabland) have limited features. Our custom bot allows us to own the end to end experience with more security.</p>
-                        </li>
-                        <li className="bridge__item">
-                            <h5 className='bridge__item-title'>Meta-games <span>IN PROGRESS</span></h5>
-                            <p className="bridge__item-text">Micro-actions and games played within the community in order to unlock new experiences.</p>
-                        </li>
-                        <li className="bridge__item bridge__item-redacted">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nam enim ea reprehenderit rerum quis dolorem nihil earum. Officiis rem suscipit, omnis fugit reprehenderit laboriosam esse eum alias eveniet ipsam. Veniam inventore tempore iure exercitationem in necessitatibus ex cupiditate recusandae!</p>
-                            <div className="bridge__redacted">REDACTED</div>
-                        </li>
-                        <li className="bridge__item">
-                            <h5 className='bridge__item-title'>An Interactive Brand<span>EXPLORING</span></h5>
-                            <p className="bridge__item-text">Imagine an RPG/Anime where the community owns their character(s) and the brand that they are helping build.</p>
-                        </li>
-                    </ul>
+                    <h2 className="bridge__title">Does Eitny work with partners? <span> //</span></h2>
+                    <p>If you are interested in partnering with us, reach out at <a href="mailto:hello@reyna.ventures">hello@reyna.ventures</a> </p>
                 </div>
                 <img className='bridge__img' src={mindmapCard5} alt="" />
                 <span className="bridge__cross" onClick={() => setHandleCardId(false)}>╳</span>

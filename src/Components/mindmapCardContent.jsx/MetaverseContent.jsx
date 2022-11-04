@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard3 from '../../assets/img/mindmapCard3.png';
+import mindmapCard3 from '../../assets/img/Card3.png';
 
 const StyledMetaverseContent = styled.div `
     .metaverse {
@@ -72,26 +72,8 @@ function MetaverseContent({ setHandleCardId }) {
         <StyledMetaverseContent>
             <div className="metaverse">
                 <div className="metaverse__content">
-                    <h2 className="metaverse__title">METAVERSE  <span> //</span></h2>
-                    <ul className='metaverse__list'>
-                        <li className="metaverse__item">
-                            <h5 className='metaverse__item-title'>Where is the metaverse today and where is it going?:</h5>
-                            <p className="metaverse__item-text">The metaverse today is where we currently spend most of our time: Discord + Twitter. How do we amplify this experience for Azuki members? How do we distribute the brand to places that have the most attention today? More importantly, where will the metaverse be one year+ from now?</p>
-                        </li>
-                        <li className="metaverse__item">
-                            <h5 className='metaverse__item-title'>Gallery <span>COMPLETE</span></h5>
-                            <p>Sorting, filtering, and simping are all supported.</p>
-                            <p className="metaverse__item-text">Calling all builders, artists, and creatives. The Garden is full of talented human beans that want to use their skills and passion for Azuki to create additive things for the metaverse. Azuki will empower and provide grants to excellent members with great ideas through a grants program. We are working through the legal framework and application process.</p>
-                        </li>
-                        <li className="metaverse__item">
-                            <h5 className='metaverse__item-title'>Bobu Fractionalization <span>IN PROGRESS</span></h5>
-                            <p className="metaverse__item-text">Azuki #40 (Bobu) will be fractionalized using fractional.art into ERC-1155 tokens. These tokens will be used for governance over Bobu. Full details here: www.azuki.com/bobu-101</p>
-                        </li>
-                        <li className="metaverse__item">
-                            <h5 className='metaverse__item-title'>GAME<span>EXPLORING</span></h5>
-                            <p className="metaverse__item-text">Many will try to create one, but few teams have the experience and background to build a genuinely great game with mass market appeal and scalability. Though the core team has the experience, it's a huge endeavor nonetheless. If we do it, we'll do it right.</p>
-                        </li>
-                    </ul>
+                    <h2 className="metaverse__title">What are the minting proceeds being used for?  <span> //</span></h2>
+                    <p>We are deeply focused on investing in our roadmap, community and mission. Of our initial minting proceeds, 20% will go to purpose projects and initiatives. Up to 5% will be donated to philanthropic organizations in partnership with our community. Remaining funding will be used to enhance our community experience, benefits and ultimately creating additional value for our community.</p>
                 </div>
                 <img className='metaverse__img' src={mindmapCard3} alt="" />
                 <span className="metaverse__cross" onClick={() => setHandleCardId(false)}>╳</span>

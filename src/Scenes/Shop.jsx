@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import SwiperSlider from '../Components/Swiper';
-import shopItemMini from '../assets/img/shopItemMini.png';
+import shopItemMini from '../assets/img/shop3.png';
 import { PATH } from '../constans/routes';
 import { useNavigate } from 'react-router-dom';
 import About from '../Components/About';
@@ -105,7 +105,7 @@ const StyledShop = styled.div `
       line-height: 1rem;
     }
     .about {
-      background-color: #fff;
+      background-color: #e7e7e9;
       padding: 40px 55px;
     }
     .about__inf {
@@ -173,18 +173,25 @@ function Shop() {
                 <SwiperSlider/>
                 <div className="shop__describe">
                   <div className="shop__name-and-price">
-                    <h3 className="shop__iten-name">TWIN TIGERS JACKET</h3>
+                    <h3 className="shop__iten-name">Weary Hoodie</h3>
                     <div className="shop__price-name">
                       <img className='shop__item-mini-img' src={shopItemMini} alt="" />
                       <p className='shop__item-price-name'>PRICE: 1 BLUE SIDE TOKEN</p>
                     </div>
                   </div>
-                  <p className="shop__item-about">The Azuki Twin Tigers Jacket is the brand's first apparel drop, reflecting the fighting spirit of Azuki. Inspired by 'Sukajan' jackets, an iconic fashion piece combining American & Japanese street culture, the Azuki Twin Tigers Jacket features the following:</p>
+                  <p className="shop__item-about">Part of the Weary Collection, the 'Weary Hoodie' features a unique embroidered black pattern on the outside of the sleeves and a simple Weary Apes logo on the chest for a minimalist, streetwear look.
+
+Made from luxurious 100% Terry Cotton, all our hoodies are super soft to the touch and perfect for everyday wear.
+
+Unisex fit. Fits regular size for male.</p>
                   <ul className="shop__item-list">
-                    <li className="shop-item__list-items">Luxurious quilted blue & red silk</li>
-                    <li className="shop-item__list-items">Chainstitch and chenille embroidered tiger (blue side)</li>
-                    <li className="shop-item__list-items">Minimalistic Azuki logo (red side)</li>
-                    <li className="shop-item__list-items">Off-white ribbing and piping (both sides)</li>
+                    <li className="shop-item__list-items">100% Cotton</li>
+                    <li className="shop-item__list-items">Machine Wash</li>
+                    <li className="shop-item__list-items">An actual depiction of Twitch vs Street Fighter</li>
+                    <li className="shop-item__list-items">Super soft. Super comfortable. Super cool</li>
+                    <li className="shop-item__list-items">Woven patch label on back. Flag label on side. Branded aglets</li>
+                    <li className="shop-item__list-items">100% Cotton. Machine wash cold, tumble dry low. Unisex, regular fit</li>
+                    <li className="shop-item__list-items">Official product designed by Twitch</li>
                   </ul>
                   <button type='button' className='shop-item__btn'>redemption window closed</button>
                 </div>
