@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { RiArrowDownSLine } from 'react-icons/ri';
-import AzukiLogoWhite from '../assets/svg/logo-eitny.svg';
 import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
 import { IoLanguageOutline } from 'react-icons/io5';
@@ -67,7 +66,7 @@ width: 100%;
 }
 .header__item a {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .header__item-more, .header__item-buy, .header__item-language {
@@ -98,6 +97,7 @@ width: 100%;
     margin-right: 10px;
 }
 .header__hidden-buy {
+    text-align: start;
     transition: 0.2s ease-out;
     padding: 0.25rem 0.55rem 0.25rem 0.25rem;
     background-color: rgba(255, 255, 255, 0.75);
@@ -106,11 +106,6 @@ width: 100%;
     left: 60%;
     transform: translateX(-50%);
     border-radius: 0.375rem;
-    li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 .header__hidden-language {
     background-color: rgba(255, 255, 255, 0.75);
@@ -216,9 +211,9 @@ function MainNav() {
                     </ul>
                 }
             </li>
-            <li className="header__item" title='Twitter'><a target='__blank' href="https://twitter.com/?lang=ru"><AiOutlineTwitter className='header__nav-icon'/></a></li>
-            <li className="header__item" title='Instagram'><a target='__blank' href="https://www.instagram.com/"><AiFillInstagram className='header__nav-icon'/></a></li>
-            <li className="header__item" title='Discord'><a target='__blank' href="https://discord.com/"><FaDiscord className='header__nav-icon'/></a></li>
+            <li className="header__item" title='Twitter'><a className='header-icon' target='__blank' href="https://twitter.com/eitnyworld"><AiOutlineTwitter className='header__nav-icon'/></a></li>
+            <li className="header__item" title='Instagram'><a className='header-icon' target='__blank' href="https://www.instagram.com/"><AiFillInstagram className='header__nav-icon'/></a></li>
+            <li className="header__item" title='Discord'><a className='header-icon' target='__blank' href="https://discord.gg/RQT3DdMcTD"><FaDiscord className='header__nav-icon'/></a></li>
             <li className="header__item header__item-language" title='Language' onClick={() => {
                 setHandleLanguage(!handleLanguage);
                 setHandleBuy(false);

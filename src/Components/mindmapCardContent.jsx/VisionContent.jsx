@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard1 from '../../assets/img/Card1.png';
+import Card1 from '../../assets/img/Card1.png';
 
 const StyledVisionContent = styled.div `
     .vision {
@@ -67,7 +67,7 @@ function VisionContent({ setHandleCardId }) {
                     <h2 className="vision__title">What is Eitny's mission?  <span> //</span></h2>
                     <p className="vision__text">We are building a paradigm-shifting product, community and platform where actions in web3 create purposeful environmental and social progress in the physical world. NFTs and Blockchain tech have started a digital revolution, but we believe tokens can be used for more. Our token will connect utility and financial opportunity with purpose, goals and physical world impact - right from the start.</p>
                 </div>
-                <img className='vision__img' src={mindmapCard1} alt="" />
+                <img className='vision__img' src={Card1} alt="" />
                 <span className="vision__cross" onClick={() => setHandleCardId(false)}>╳</span>
             </div>
         </StyledVisionContent>
