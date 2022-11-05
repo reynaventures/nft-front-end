@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard3 from '../../assets/img/Card3.png';
+import CardImg3 from '../../assets/img/CardImg3.png'; 
 
-const StyledMetaverseContent = styled.div `
-    .metaverse {
+const StyledCard3 = styled.div `
+    .card3 {
         position: absolute;
         top: 0;
         left: 0;
@@ -18,7 +18,7 @@ const StyledMetaverseContent = styled.div `
         column-gap: 10px;
         transition: 0.4s all;
     }
-    .metaverse__title {
+    .card3__title {
         color: #000;
         font-family: 'proofBoldFont', sans-serif;
         margin-bottom: 15px;
@@ -26,7 +26,7 @@ const StyledMetaverseContent = styled.div `
             color: #0000002f;
         }
     }
-    .metaverse__item-title {
+    .card3__item-title {
         border-radius: 10px;
         padding: 3px;
         margin-right: 4px;
@@ -38,10 +38,10 @@ const StyledMetaverseContent = styled.div `
             margin-left: 3px;
         }
     }
-    .metaverse__list {
+    .card3__list {
         margin-top: 20px;
     }
-    .metaverse__cross {
+    .card3__cross {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -50,36 +50,36 @@ const StyledMetaverseContent = styled.div `
         font-weight: bold;
         transition: 0.4s all;
     }
-    .metaverse__item + .metaverse__item {
+    .card3__item + .card3__item {
         margin-top: 10px;
     }
-    .metaverse__img {
+    .card3__img {
         max-width: 70%;
         align-self: center;
     }
     @media only screen and (max-width: 1050px) {
-        .metaverse__img {
+        .card3__img {
             display: none;
         }
-        .metaverse__item-text {
+        .card3__item-text {
             display: none;
         }
     }
 `
 
-function MetaverseContent({ setHandleCardId }) {
+function Card3({ setHandleCardId }) {
     return (
-        <StyledMetaverseContent>
-            <div className="metaverse">
-                <div className="metaverse__content">
-                    <h2 className="metaverse__title">What are the minting proceeds being used for?  <span> //</span></h2>
+        <StyledCard3>
+            <div className="card3">
+                <div className="card3__content">
+                    <h2 className="card3__title">What are the minting proceeds being used for?  <span> //</span></h2>
                     <p>We are deeply focused on investing in our roadmap, community and mission. Of our initial minting proceeds, 20% will go to purpose projects and initiatives. Up to 5% will be donated to philanthropic organizations in partnership with our community. Remaining funding will be used to enhance our community experience, benefits and ultimately creating additional value for our community.</p>
                 </div>
-                <img className='metaverse__img' src={mindmapCard3} alt="" />
-                <span className="metaverse__cross" onClick={() => setHandleCardId(false)}>╳</span>
+                <img className='card3__img' src={CardImg3} alt="" />
+                <span className="card3__cross" onClick={() => setHandleCardId(false)}>╳</span>
             </div>
-        </StyledMetaverseContent>
+        </StyledCard3>
     )
 }
 
-export default MetaverseContent
+export default Card3

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard2 from '../../assets/img/Card2.png';
+import CardImg2 from '../../assets/img/CardImg2.png'; 
 
-const StyledCommunityContent = styled.div `
-        .community {
+const StyledCard2 = styled.div `
+        .card2 {
         position: absolute;
         top: 0;
         left: 0;
@@ -18,7 +18,7 @@ const StyledCommunityContent = styled.div `
         column-gap: 10px;
         transition: 0.4s all;
     }
-    .community__title {
+    .card2__title {
         color: #000;
         font-family: 'proofBoldFont', sans-serif;
         margin-bottom: 15px;
@@ -26,7 +26,7 @@ const StyledCommunityContent = styled.div `
             color: #0000002f;
         }
     }
-    .community__item-title {
+    .card2__item-title {
         border-radius: 10px;
         padding: 3px;
         margin-right: 4px;
@@ -37,10 +37,10 @@ const StyledCommunityContent = styled.div `
             margin-left: 3px;
         }
     }
-    .community__list {
+    .card2__list {
         margin-top: 20px;
     }
-    .community__cross {
+    .card2__cross {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -49,33 +49,33 @@ const StyledCommunityContent = styled.div `
         font-weight: bold;
         transition: 0.4s all;
     }
-    .community__item + .community__item {
+    .card2__item + .card2__item {
         margin-top: 10px;
     }
-    .community__img {
+    .card2__img {
         max-width: 70%;
         align-self: center;
     }
     @media only screen and (max-width: 1050px) {
-        .community__item-text {
+        .card2__item-text {
             display: none;
         }
     }
 `
 
-function CommunityContent({ setHandleCardId }) {
+function Card2({ setHandleCardId }) {
     return (
-        <StyledCommunityContent>
-            <div className="community">
-                <div className="community__content">
-                    <h2 className="community__title">What is the utility of Eitny?  <span> //</span></h2>
-                    <p>The team behind Eitny is dedicated to enhancing your experience and creating value for the community. We are combining membership, merchandise & rewards and real world utility. We’ll be leaking our plans for the future in the coming weeks. It's important to us to under-promise and over-deliver. But trust us… This is only the beginning</p>
+        <StyledCard2>
+            <div className="card2">
+                <div className="card2__content">
+                    <h2 className="card2__title">What is the utility of Eitny?  <span> //</span></h2>
+                    <p>The team behind Eitny is dedicated to enhancing your experience and creating value for the card2. We are combining membership, merchandise & rewards and real world utility. We’ll be leaking our plans for the future in the coming weeks. It's important to us to under-promise and over-deliver. But trust us… This is only the beginning</p>
                 </div>
-                <img className='community__img' src={mindmapCard2} alt="" />
-                <span className="community__cross" onClick={() => setHandleCardId(false)}>╳</span>
+                <img className='card2__img' src={CardImg2} alt="" />
+                <span className="card2__cross" onClick={() => setHandleCardId(false)}>╳</span>
             </div>
-        </StyledCommunityContent>
+        </StyledCard2>
     )
 }
 
-export default CommunityContent
+export default Card2

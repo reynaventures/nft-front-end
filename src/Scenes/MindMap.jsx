@@ -1,17 +1,15 @@
 import React, { useState } from 'react'
-import mindMapGirl from '../assets/img/mindMapGirl.png';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import VisionContent from '../Components/mindmapCardContent.jsx/VisionContent';
 import { mindmapCards } from '../constans/mindmapCards';
-import CommunityContent from '../Components/mindmapCardContent.jsx/CommunityContent';
-import MetaverseContent from '../Components/mindmapCardContent.jsx/MetaverseContent';
-import PhysicalContent from '../Components/mindmapCardContent.jsx/PhysicalContent';
-import BridgeContent from '../Components/mindmapCardContent.jsx/BridgeContent';
-import SeedlingContent from '../Components/mindmapCardContent.jsx/SeedlinghtContent';
-import ConnentContent from '../Components/mindmapCardContent.jsx/ConnentContent';
-import { StyledMindMap } from './StyledMindmap';
+import Card1 from '../Components/mindmapCardContent.jsx/Card1';
+import Card2 from '../Components/mindmapCardContent.jsx/Card2';
+import Card3 from '../Components/mindmapCardContent.jsx/Card3';
+import Card4 from '../Components/mindmapCardContent.jsx/Card4';
+import Card5 from '../Components/mindmapCardContent.jsx/Card5';
+import Card6 from '../Components/mindmapCardContent.jsx/Card6';
+import Card7 from '../Components/mindmapCardContent.jsx/Card7';
 import Card8 from '../Components/mindmapCardContent.jsx/Card8';
-import Card9 from '../Components/mindmapCardContent.jsx/Card9';
+import { StyledMindMap } from './StyledMindmap';
 
 function MindMap() {
 
@@ -19,23 +17,21 @@ function MindMap() {
     const contentCard = (id) => {
         switch (id) {
             case 0:
-                return <VisionContent setHandleCardId={setHandleCardId}/>
+                return <Card1 setHandleCardId={setHandleCardId}/>
             case 1:
-                return <CommunityContent setHandleCardId={setHandleCardId}/>
+                return <Card2 setHandleCardId={setHandleCardId}/>
             case 2:
-                return <MetaverseContent setHandleCardId={setHandleCardId}/>
+                return <Card3 setHandleCardId={setHandleCardId}/>
             case 3:
-                return <PhysicalContent setHandleCardId={setHandleCardId}/>
+                return <Card4 setHandleCardId={setHandleCardId}/>
             case 4:
-                return <BridgeContent setHandleCardId={setHandleCardId}/>
+                return <Card5 setHandleCardId={setHandleCardId}/>
             case 5:
-                return <SeedlingContent setHandleCardId={setHandleCardId}/>
+                return <Card6 setHandleCardId={setHandleCardId}/>
             case 6:
-                return <ConnentContent setHandleCardId={setHandleCardId}/>
+                return <Card7 setHandleCardId={setHandleCardId}/>
             case 7:
                 return <Card8 setHandleCardId={setHandleCardId}/>
-            case 8:
-                return <Card9 setHandleCardId={setHandleCardId}/>
             default:
                 console.log('nothing');
         }

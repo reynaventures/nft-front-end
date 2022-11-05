@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import mindmapCard1 from '../../assets/img/Card1.png';
+import CardImg1 from '../../assets/img/CardImg1.png';
 
-const StyledSeedlingContent = styled.div `
-    .seedling {
+const StyledCard1 = styled.div `
+    .card1 {
         position: absolute;
         top: 0;
         left: 0;
@@ -18,7 +18,7 @@ const StyledSeedlingContent = styled.div `
         column-gap: 10px;
         transition: 0.4s all;
     }
-    .seedling__title {
+    .card1__title {
         color: #000;
         font-family: 'proofBoldFont', sans-serif;
         margin-bottom: 15px;
@@ -26,17 +26,17 @@ const StyledSeedlingContent = styled.div `
             color: #0000002f;
         }
     }
-    .seedling__item-title {
+    .card1__item-title {
         background: linear-gradient(to right, yellow, #fff);
         border-radius: 10px;
         padding: 3px;
         margin-right: 4px;
         transition: 0.4s all;
     }
-    .seedling__list {
+    .card1__list {
         margin-top: 20px;
     }
-    .seedling__cross {
+    .card1__cross {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -45,35 +45,33 @@ const StyledSeedlingContent = styled.div `
         font-weight: bold;
         transition: 0.4s all;
     }
-    .seedling__item + .seedling__item {
+    .card1__item + .card1__item {
         margin-top: 10px;
     }
-    .seedling__img {
+    .card1__img {
         max-width: 60%;
         align-self: center;
     }
     @media only screen and (max-width: 1050px) {
-        .seedling__item-text {
+        .card1__item-text {
             display: none;
         }
     }
-
 `
 
-function SeedlingContent({ setHandleCardId }) {
+function Card1({ setHandleCardId }) {
     return (
-        <StyledSeedlingContent>
-            <div className="seedling">
-                <div className="seedling__content">
-                    <h2 className="seedling__title">When do we learn more about the Eitny art, lore & functions?<span> //</span></h2>
-                    <p className="seedling__text">Check out our Wiki page for more team & project details.</p>
-
+        <StyledCard1>
+            <div className="card1">
+                <div className="card1__content">
+                    <h2 className="card1__title">What is Eitny's mission?  <span> //</span></h2>
+                    <p className="card1__text">We are building a paradigm-shifting product, community and platform where actions in web3 create purposeful environmental and social progress in the physical world. NFTs and Blockchain tech have started a digital revolution, but we believe tokens can be used for more. Our token will connect utility and financial opportunity with purpose, goals and physical world impact - right from the start.</p>
                 </div>
-                <img className='seedling__img' src={mindmapCard1} alt="" />
-                <span className="seedling__cross" onClick={() => setHandleCardId(false)}>╳</span>
+                <img className='card1__img' src={CardImg1} alt="" />
+                <span className="card1__cross" onClick={() => setHandleCardId(false)}>╳</span>
             </div>
-        </StyledSeedlingContent>
+        </StyledCard1>
     )
 }
 
-export default SeedlingContent
+export default Card1

@@ -6,4 +6,4 @@ function Card9() {
   )
 }
 
-export default Card9
+export default Card9;
